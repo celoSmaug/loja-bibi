@@ -1,0 +1,139 @@
+body {
+    margin: 0;
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: linear-gradient(to bottom, #1a1a1a, #2c3e50);
+    font-family: Arial, sans-serif;
+}
+
+.container {
+    text-align: center;
+    perspective: 1000px;
+}
+
+.building {
+    width: 300px;
+    height: 500px;
+    background: linear-gradient(to bottom, #4a4a4a, #2c2c2c);
+    position: relative;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(5, 1fr);
+    gap: 15px;
+    padding: 20px;
+    border-radius: 5px;
+    box-shadow: 
+        0 0 20px rgba(0, 0, 0, 0.5),
+        inset 0 0 20px rgba(0, 0, 0, 0.3);
+    transform: rotateX(5deg);
+}
+
+.building::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    height: 40px;
+    background: linear-gradient(to bottom, #666, #4a4a4a);
+    border-radius: 5px 5px 0 0;
+}
+
+.building::after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    height: 20px;
+    background: #333;
+    border-radius: 0 0 5px 5px;
+}
+
+.window {
+    background: linear-gradient(135deg, #1a1a1a, #333);
+    border-radius: 3px;
+    transition: all 0.5s ease;
+    cursor: pointer;
+    position: relative;
+    box-shadow: inset 0 0 10px rgba(0, 0, 0, 0.5);
+    border: 2px solid #444;
+}
+
+.window::before {
+    content: '';
+    position: absolute;
+    top: 50%;
+    left: 0;
+    right: 0;
+    height: 1px;
+    background: #444;
+}
+
+.window::after {
+    content: '';
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 50%;
+    width: 1px;
+    background: #444;
+}
+
+.window[data-light="on"] {
+    background: linear-gradient(135deg, #ffeb3b, #ffd700);
+    box-shadow: 
+        0 0 20px #ffeb3b,
+        inset 0 0 10px rgba(255, 255, 255, 0.5);
+    border-color: #ffd700;
+}
+
+.window[data-light="on"]::before,
+.window[data-light="on"]::after {
+    background: rgba(255, 255, 255, 0.3);
+}
+
+.window:hover {
+    transform: scale(1.05);
+    z-index: 1;
+}
+
+.message {
+    margin-top: 30px;
+    font-size: 24px;
+    color: white;
+    text-shadow: 0 0 10px rgba(255, 255, 255, 0.3);
+}
+
+.clock {
+    margin-top: 10px;
+    font-size: 18px;
+    color: #ffeb3b;
+    text-shadow: 0 0 10px rgba(255, 235, 59, 0.3);
+}
+
+.controls {
+    margin-top: 20px;
+}
+
+button {
+    padding: 10px 20px;
+    margin: 0 5px;
+    border: none;
+    border-radius: 5px;
+    background: linear-gradient(to bottom, #ffeb3b, #ffd700);
+    color: #1a1a1a;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+    font-weight: bold;
+}
+
+button:hover {
+    background: linear-gradient(to bottom, #fff, #ffeb3b);
+    transform: scale(1.05);
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+} 
