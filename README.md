@@ -29,6 +29,9 @@ Um projeto interativo que simula um prédio com janelas que acendem e apagam bas
    ```
    E acesse `http://localhost:8000`
 
+**Acesse o site publicado aqui:**
+https://celosmaug.github.io/predio-com-luzes/
+
 ## Estrutura do Projeto
 
 - `index.html` - Estrutura da página
