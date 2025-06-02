@@ -115,6 +115,14 @@ body {
     text-shadow: 0 0 10px rgba(255, 235, 59, 0.3);
 }
 
+.lights-counter {
+    margin-top: 10px;
+    font-size: 18px;
+    color: #00e676;
+    text-shadow: 0 0 10px rgba(0, 230, 118, 0.3);
+    font-weight: bold;
+}
+
 .controls {
     margin-top: 20px;
 }
@@ -136,4 +144,33 @@ button:hover {
     background: linear-gradient(to bottom, #fff, #ffeb3b);
     transform: scale(1.05);
     box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+}
+
+@media (max-width: 600px) {
+  .building {
+    width: 90vw;
+    height: 60vw;
+    min-width: 180px;
+    min-height: 300px;
+    padding: 10px;
+    gap: 6px;
+  }
+  .container {
+    padding: 0 2vw;
+  }
+}
+
+body.night {
+  background: linear-gradient(to bottom, #0d1333, #1a237e);
+}
+
+@media (max-width: 400px) {
+  .building {
+    width: 98vw;
+    height: 80vw;
+    min-width: 120px;
+    min-height: 200px;
+    padding: 2vw;
+    gap: 2vw;
+  }
 } 
