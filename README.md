@@ -1,4 +1,4 @@
-🔗 [Acesse o site publicado aqui!](https://celoSmaug.github.io/predio-luzes-dinamicas/)
+🔗 [Acesse o site publicado aqui!](https://celosmaug.github.io/predio-com-luzes/)
 
 # Prédio com Luzes Interativas
 
