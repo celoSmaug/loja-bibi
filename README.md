@@ -37,4 +37,7 @@ Um projeto interativo que simula um prédio com janelas que acendem e apagam bas
 
 ## Contribuição
 
-Sinta-se à vontade para contribuir com o projeto através de pull requests. 
+Sinta-se à vontade para contribuir com o projeto através de pull requests.
+
+---
+Atualização: commit para forçar publicação do GitHub Pages. 
