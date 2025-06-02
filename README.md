@@ -1,3 +1,5 @@
+🔗 [Acesse o site publicado aqui!](https://celoSmaug.github.io/predio-luzes-dinamicas/)
+
 # Prédio com Luzes Interativas
 
 Um projeto interativo que simula um prédio com janelas que acendem e apagam baseado no horário do dia ou através de interação do usuário.
