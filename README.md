@@ -1,46 +1,137 @@
-🔗 [Acesse o site publicado aqui!](https://celosmaug.github.io/predio-com-luzes/)
+# 🛍️ A Loja da Bibi - E-commerce Completo
 
-# Prédio com Luzes Interativas
+Um projeto completo de e-commerce desenvolvido com **React** (frontend) e **Node.js** (backend), incluindo autenticação, carrinho de compras, e painel administrativo.
 
-Um projeto interativo que simula um prédio com janelas que acendem e apagam baseado no horário do dia ou através de interação do usuário.
+## 🚀 Tecnologias Utilizadas
 
-## Funcionalidades
+### Frontend
+- **React 18** com Vite
+- **Material UI** para interface
+- **React Router** para navegação
+- **Axios** para requisições HTTP
+- **Context API** para gerenciamento de estado
 
-- Janelas que acendem automaticamente após as 18:00
-- Janelas que apagam automaticamente antes das 18:00
-- Relógio digital em tempo real
-- Interatividade com as janelas (clique para ligar/desligar)
-- Botão para acender/apagar todas as janelas
-- Botão para acender/apagar janelas aleatoriamente
+### Backend
+- **Node.js** com Express
+- **Prisma ORM** para banco de dados
+- **SQLite** como banco de dados
+- **JWT** para autenticação
+- **Zod** para validação de dados
+- **bcrypt** para hash de senhas
 
-## Tecnologias Utilizadas
+## 📁 Estrutura do Projeto
 
-- HTML5
-- CSS3
-- JavaScript (Vanilla)
+```
+├── frontend/          # Aplicação React
+│   ├── src/
+│   │   ├── components/    # Componentes reutilizáveis
+│   │   ├── pages/         # Páginas da aplicação
+│   │   ├── contexts/      # Contextos React
+│   │   └── services/      # Serviços de API
+│   └── package.json
+├── backend/           # API Node.js
+│   ├── routes/        # Rotas da API
+│   ├── middleware/    # Middlewares
+│   ├── prisma/        # Schema e migrações
+│   └── package.json
+└── README.md
+```
 
-## Como Executar
+## 🛠️ Como Executar
 
-1. Clone o repositório
-2. Abra o arquivo `index.html` em seu navegador
-3. Ou execute um servidor local simples:
-   ```bash
-   python -m http.server 8000
-   ```
-   E acesse `http://localhost:8000`
+### Pré-requisitos
+- Node.js 18+
+- npm ou yarn
 
-**Acesse o site publicado aqui:**
-https://celosmaug.github.io/predio-com-luzes/
+### Backend
+```bash
+cd backend
+npm install
+npm run migrate
+npm run seed
+npm start
+```
 
-## Estrutura do Projeto
+### Frontend
+```bash
+cd frontend
+npm install
+npm run dev
+```
 
-- `index.html` - Estrutura da página
-- `styles.css` - Estilos e animações
-- `script.js` - Lógica e interatividade
+## 🌐 URLs de Acesso
 
-## Contribuição
+- **Frontend**: http://localhost:5173
+- **Backend API**: http://localhost:3001
 
-Sinta-se à vontade para contribuir com o projeto através de pull requests.
+## 📋 Funcionalidades
+
+### Para Clientes
+- ✅ Navegação por produtos
+- ✅ Busca e filtros
+- ✅ Carrinho de compras
+- ✅ Cadastro e login
+- ✅ Histórico de pedidos
+- ✅ Perfil do usuário
+
+### Para Administradores
+- ✅ Painel administrativo
+- ✅ Gerenciamento de produtos
+- ✅ Gerenciamento de categorias
+- ✅ Gerenciamento de pedidos
+- ✅ Relatórios de vendas
+
+## 🔐 Autenticação
+
+O sistema utiliza JWT para autenticação. Usuários podem:
+- Registrar nova conta
+- Fazer login
+- Acessar rotas protegidas
+- Gerenciar perfil
+
+## 🛒 Carrinho de Compras
+
+- Adicionar/remover produtos
+- Alterar quantidades
+- Calcular total
+- Persistência local
+- Finalização de compra
+
+## 📊 Banco de Dados
+
+O projeto utiliza SQLite com Prisma ORM, incluindo:
+- Usuários
+- Produtos
+- Categorias
+- Pedidos
+- Itens de pedido
+
+## 🚀 Deploy
+
+### Frontend (Vercel/Netlify)
+```bash
+cd frontend
+npm run build
+```
+
+### Backend (Railway/Render)
+```bash
+cd backend
+npm start
+```
+
+## 👥 Contribuição
+
+1. Faça um fork do projeto
+2. Crie uma branch para sua feature
+3. Commit suas mudanças
+4. Push para a branch
+5. Abra um Pull Request
+
+## 📝 Licença
+
+Este projeto está sob a licença MIT.
 
 ---
-Atualização: commit para forçar publicação do GitHub Pages. 
+
+**Desenvolvido com ❤️ para o bootcamp** 
