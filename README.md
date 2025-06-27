@@ -2,6 +2,8 @@
 
 Um projeto completo de e-commerce desenvolvido com **React** (frontend) e **Node.js** (backend), incluindo autenticação, carrinho de compras, e painel administrativo.
 
+**Status**: ✅ Projeto completo e funcional
+
 ## 🚀 Tecnologias Utilizadas
 
 ### Frontend
