@@ -4,6 +4,10 @@ Um projeto completo de e-commerce desenvolvido com **React** (frontend) e **Node
 
 **Status**: ✅ Projeto completo e funcional
 
+## 🌐 **Acesse o Site**
+
+**🎯 [A Loja da Bibi - Site Online](https://celosmaug.github.io/loja-bibi/)**
+
 ## 🚀 Tecnologias Utilizadas
 
 ### Frontend
@@ -63,7 +67,8 @@ npm run dev
 
 ## 🌐 URLs de Acesso
 
-- **Frontend**: http://localhost:5173
+- **Frontend (Produção)**: [https://celosmaug.github.io/loja-bibi/](https://celosmaug.github.io/loja-bibi/)
+- **Frontend (Local)**: http://localhost:5173
 - **Backend API**: http://localhost:3001
 
 ## 📋 Funcionalidades
@@ -110,11 +115,9 @@ O projeto utiliza SQLite com Prisma ORM, incluindo:
 
 ## 🚀 Deploy
 
-### Frontend (Vercel/Netlify)
-```bash
-cd frontend
-npm run build
-```
+### Frontend (GitHub Pages)
+- ✅ **Deploy automático** via GitHub Actions
+- ✅ **URL**: [https://celosmaug.github.io/loja-bibi/](https://celosmaug.github.io/loja-bibi/)
 
 ### Backend (Railway/Render)
 ```bash
@@ -136,4 +139,6 @@ Este projeto está sob a licença MIT.
 
 ---
 
-**Desenvolvido com ❤️ para o bootcamp** 
+**Desenvolvido com ❤️ para o bootcamp**
+
+**🔗 [Acesse o site aqui!](https://celosmaug.github.io/loja-bibi/)** 
