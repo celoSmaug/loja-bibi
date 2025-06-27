@@ -74,4 +74,13 @@ generated/
 .vite/
 
 # React
-*.tsbuildinfo 
+*.tsbuildinfo
+
+# Other projects
+dio-lab-open-source/
+pokemon-site/
+mini-ecommerce/
+script.js
+styles.css
+index.html
+.nojekyll 
